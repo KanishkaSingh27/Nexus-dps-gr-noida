@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <title>
+            DIGICARD
+        </title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" type = "text/css" href="style.css">      
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("topnav");
+        
+            function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    
+            </script>
+            <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+            <script>
+                particlesJS.load("particles-js", "particles.json", function () {
+                    console.log("yeah");
+                });
+      </script>        
+      <div id="particles-js"><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="937"
+        height="1193"></canvas></div>
+            <section id="home">
+                
+            <div class="header">
+    
+            <div class="inner-header flex">
+
+    <div class="topnav" id="myTopnav">
+       
+        <a href="#stu" class="left">Student</a>
+        <a href="#school" class="left">School</a>
+        <a href="#sol" class="left">Solution</a>
+      <a href="why.html" class="left">Why</a>
+      <a href="#abt" class="left">About</a>
+      <a href="index.html" class="left">Home</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    </div>
+
+    <div class="typing head">
+      
+      <h1 class="h1_1">DigiCard</h1>
+      <p class="line"> The  <span style="color:#9bd4ff;"><i>Smart</i></span> Choice for Students </p>
+    
+    </div>
+    <img src="rfid chip.png" class="img"></img>
+    <center>
+        <a href="#abt" id="nextSection"><i class="fa-solid fa-chevron-down fa-2xl fa-bounce" style="color: #E3E7D3;margin-top: 35%;margin-left: 40%;
+            padding-bottom: 180px;"></i></a>
+    </center>
+    </div>
+    </section>
+<section id="abt">
+    <div class="text-container">
+        <div class="text-column">  <b><h1 class="heading" >About Us</h1></b></div>
+         
+         
+         <div class="text-column">
+         <p class="abt">
+            Our aim is to introduce an RFID card to schools which already don't have one. In our school there is a RFID id-card provided to all students. But it only works to provide the attendance of the child with the parents. We plan on expanding the usage of the card.
+
+Not only can the card be used for identification purposes, but it can also be used as a 
+
+wallet.
+
+For all these problems to be addressed few RFID readers would be needed in the required locations so that the working of the RFID would become more efficient .
+         </p> </div> 
+       </div>
+</section>
+<footer class="footer">
+    <div class="footer-content">
+      <p class="footerText">&copy; Team DigiCard 2024</p>
+    </div>
+  </footer>
+  <button onclick="topFunction()" id="top" title="Go to top" style="background-color: #9bd4ff;"><i class="fa-solid fa-chevron-up"></i></button>
+  <script>
+    feather.replace();
+  </script>
+ <script>
+    mybutton = document.getElementById("top");
+  
+  
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  function topFunction() {
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0; 
+  }
+  </script>
+</body>
+</html>
