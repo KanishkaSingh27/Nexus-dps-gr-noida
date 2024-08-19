@@ -41,20 +41,17 @@
         height="1193"></canvas></div>
             <section id="home">
                 
-            <div class="header">
-    
-            <div class="inner-header flex">
+            
 
     <div class="topnav" id="myTopnav">
        
         <a href="#stu" class="left">Student</a>
         <a href="#school" class="left">School</a>
         <a href="#sol" class="left">Solution</a>
-      <a href="#why" class="left">Why</a>
-      <a href="#abt" class="left">About</a>
+      <a href="why.html" class="left">Why</a>
+      <a href="#problem" class="left">Problems</a>
       <a href="index.html" class="left">Home</a>
       <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
     </div>
 
     <div class="typing head">
@@ -68,37 +65,103 @@
             padding-bottom: 180px;"></i></a>
     </center>
 </section>
-<section id="Social">
-    <center><div class="yellow"><h1 class="h1">Social Impact</h1></div></center>
+<section id="problem">
+    <center><div class="yellow"><h1 class="h1">Problem Faced</h1></div></center>
     
-  </section>
+  
   <center>
 <div class="flex-container-1">
       <div class="flex-1">
         
-        <h2 class="one">Labor Exploitation :</h2>
+        <h2 class="one">Inefficiency and Error-Prone :</h2>
         <p class="text">
-          The fast fashion method, which promotes cheap and speedy manufacturing, frequently results in poor working conditions and low wages for factory employees in developing countries.
+          Manually tracking and entering student records is a labor-intensive process prone to errors, making it an inefficient method for managing large volumes of data..
         </p>
       </div>
       <div class="flex-1">
-        <h2 class="one">Consumer Culture :</h2>
+        <h2 class="one">Risk of Data Loss :</h2>
       <p class="text">
-        Consumer culture prioritizes excessive clothing and accessory consumption, resulting in significant fashion waste, which includes discarded garments, accessories, as a result of trends and marketing strategies.
-
+        Physical documents are susceptible to being misplaced or damaged, leading to potential loss of critical student information and complicating the retrieval of accurate records.
       </p>
       </div>
       <div class="flex-1">
         <h2 class="one">
-          Inequity :</h2>
+          Complicated Transcript Management :</h2>
       <p class="text">
-        Social groups, often marginalized, bear disproportionate environmental and social consequences of excessive fashion consumption, affecting social justice, economic disparity, and environmental degradation.
-
+        At the end of the school year, issuing transcripts to colleges becomes problematic if hard copies are missing, requiring time-consuming manual searches through records to recreate lost documents.
       </p> 
       </div>      
     </div>
   
   </center>
-  </body>
+</section>
+
+ 
+<section id="more">
+<div class="yellow" style="margin-top: 40px;" ><center><h1 class="h1">Elaborate</h1></center></div>
+<div class="flex-container">
+<div class="flex_1 flex">
+<img class="card__img" src="../images/depletion.jpg" alt="resources depletion">
+<h2><i class="fa-solid fa-file-invoice fa-beat" style="color: #9bd4ff; padding-right: 10px;"></i>Academics :</h2>
+<p class="text">
+  Each student's academic record is maintained in a dossier, which must be regularly updated for report cards and scholar badges. To receive a scholar badge each year, students must submit their report cards. If a report card is lost, retrieving a copy from a previous year involves a lengthy and complicated process.</p>
+</div>
+<div class="flex_1 flex">
+<img class="card__img" src="../images/pollution.jpg" alt="pollution">
+<h2><i class="fa-solid fa-book fa-beat" style="color: #9bd4ff;padding-right: 10px;"></i>Issuing Books :</h2>
+<p class="text">
+  Students at school are granted a library card for issuing books but at times, the card gets loose and is lost by the student. Due to this, the track of the books is lost by the librarian.
+
+  The track of the books is kept manually by the librarian which is a tedious job considering the number of students in a school. This requires a lot of manpower and man-hours </p>
+</div>
+<div class="flex">
+<img class="card__img" src="../images/gas.jpg" alt="Greenhouse gas emissions">
+<h2><i class="fa-solid fa-notes-medical fa-beat" style="color: #9bd4ff;padding-right: 10px;"></i>Medical Data :</h2>
+<p class="text">
+
+  Every student has a medical record written on a paper document. For every student, it becomes difficult to keep track of their medical history when they go to the medical room. If ever there is an emergency, taking out a file for that child would waste a lot of time and the medical care required by the student might not be met at the right time.
+</p> 
+</div>
+<div class="flex">
+<img class="card__img" src="../images/waste.jpg" alt="landfills">
+<h2><i class="fa-solid fa-shop fa-beat" style="color: #9bd4ff;padding-right: 10px;"></i>Access to shops <br> (in school) :</h2>
+<p class="text">
+  At the start of a new school session, students need to purchase new books and uniforms, often carrying a significant amount of money to do so. This money can sometimes be misplaced due to absent-mindedness. Similarly, in the canteen, students may lose money in the crowd or spend excessively without any limit, making it difficult to manage their expenses.
+
+</p>
+</div>
+</div>
+
+
+</section>
+<footer class="footer">
+  <div class="footer-content">
+    <p class="footerText">&copy; Team DigiCard 2024</p>
+  </div>
+</footer>
+<button onclick="topFunction()" id="top" title="Go to top" style="background-color: #9bd4ff;"><i class="fa-solid fa-chevron-up"></i></button>
+<script>
+  feather.replace();
+</script>
+<script>
+  mybutton = document.getElementById("top");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}
+</script>
 </body>
 </html>
+  </body>
