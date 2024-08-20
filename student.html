@@ -1,0 +1,252 @@
+<html>
+    <head>
+        <title>
+            Student Dashboard
+        </title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" type = "text/css" href="why.css">      
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="16-11.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+<script type="text/javascript" src="16-11.js"></script>
+    </head>
+    <style>
+        
+.gate-box {
+    width: 500px;
+/*    height: 400px;*/
+    margin-left: auto;
+    margin-top: 60px;
+    margin-right: auto;
+    border: none;   
+    border-radius: 3px;
+    background-color: transparent;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.picker-box {
+    display: flex;
+    flex: row;
+    width: 95%;
+    height: 3.5em;
+    border: 1px solid #5f8c96;  
+    text-align: center;
+    margin: 1em;
+    margin-bottom: 0;
+}
+
+.picker {
+    flex-basis: 50%;
+    background: inherit;
+    color: #325656;
+    font: inherit;
+    border: none;
+}
+
+.picked {
+    background-color: #83b7c7;
+}
+
+.picker:hover {
+    background-color: #9bd4ff;
+    color: #0c1618;
+
+}
+.message {
+    font-size: 1.7em;
+    margin: 0.4em;
+    color: #9bd4ff;
+    text-align: center;
+}
+
+.input-field {
+    display: flex;
+    width: 100%;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; 
+}
+
+input {
+    width: 95%;
+    height: 3.5em;
+    padding: 1em;
+    margin: 1em auto 1em auto;
+    background-color: inherit;
+    color: inherit;
+    border: 1px solid #9bd4ff;
+}
+
+
+input::placeholder {
+    color: 	#9bd4ff;
+}
+
+.small {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.small-input {
+    width: 45%;   
+}
+
+
+.a {
+    align-self: flex-end;
+    margin-right: 3%;
+    font-size: 0.75em;
+    color: #325656;
+}
+
+.a:hover {
+    color: #6ca1b2;
+}
+input[type="submit"] {
+width:100%;
+position: relative;
+z-index: 1;
+display: inline-block;
+padding: 16px 20px;
+margin:8px 0;
+font-size: 28px;
+font-family:'poppins',sans-serif;
+background-color:#c6ffc6;
+background-size: 100%;
+background-image: -webkit-linear-gradient(45deg,
+                                          rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%,
+                                          rgba(0, 0, 0, 0) 50%,
+                                          rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%,
+                                          rgba(0, 0, 0, 0));
+background-image:          linear-gradient(45deg,
+                                          rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%,
+                                          rgba(0, 0, 0, 0) 50%,
+                                          rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%,
+                                          rgba(0, 0, 0, 0));
+background-size: 20px 20px, 100% 100%;
+border: 1px solid ;
+border-color:  #c6ffc6;
+border-bottom-width : 3px;
+color:#001220;
+outline: none;
+cursor: pointer;
+-webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
+border-radius:4px;
+}
+input[type="submit"]:hover {
+background-size: 40px 40px;
+}
+
+    </style>
+    <body>
+      
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("topnav");
+        
+            function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    
+            </script>
+            <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+            <script>
+                particlesJS.load("particles-js", "particles.json", function () {
+                    console.log("yeah");
+                });
+      </script>        
+      <div id="particles-js"><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="937"
+        height="1193"></canvas></div>
+            <section id="home">
+                
+            
+
+    <div class="topnav" id="myTopnav">
+       
+        <a href="#stu" class="left">Student</a>
+        
+        <a href="sol.html" class="left">Solution</a>
+      <a href="why.html" class="left">Why</a>
+      <a href="#problem" class="left">Problems</a>
+      <a href="index.html" class="left">Home</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+</section>
+<section>
+    <div class="gate-box">
+        <div class="picker-box">
+            <button class="picker" id="log-in"><p>Log-in</p></button>
+            <button class="picker picked" id="sign-in"><p>Sign-up</p></button>
+        </div>
+        
+        <div class="input-field" id="sign-input">
+            <h2 class="message">Sign-up for free!</h2>
+            <div class="small">
+                <input class="small-input" type="text" placeholder="First Name">
+                <input class="small-input" type="text" placeholder="Last Name">
+            </div>
+            <input type="email" placeholder="E-mail"    autocomplete="on">
+             <input type="password" placeholder="Choose a password" required> 
+            <input class="submit-button" type="submit" value="Sign-up">
+        </div>
+            
+        <div class="input-field inactive" id="log-input">    
+            <h2 class="message"> Welcome Back !</h2>
+            <input type="email" placeholder="E-mail"    autocomplete="on">
+            <input type="password" placeholder="password" required> 
+            <a class="a">Forgot password?</a>
+             <input class="submit-button" type="submit" value="Log-in">
+        </div>
+    </div>
+</section>
+<script>
+    
+$(document).ready(function(){
+    
+    let picker = $(".picker");
+    let loginfo = $('#log-input');
+    let inactive = $('.inactive');
+    
+    inactive.hide();
+    picker.click(function(e){
+        if( $(this).is("#log-in") )  {
+            loginfo.removeClass("inactive");
+            $("#log-input").attr("display", "flex");
+        }
+        loginfo.toggle( $(this).is("#log-in") );
+        $("#sign-input").toggle( $(this).is("#sign-in") );
+        $("#sign-in").toggleClass("picked", $(this).is("#sign-in"));
+        $("#log-in").toggleClass("picked", $(this).is("#log-in"));
+    });
+});
+    
+
+
+
+
+
+</script>
+</body>
+</html>
