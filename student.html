@@ -42,22 +42,24 @@
     flex: row;
     width: 95%;
     height: 3.5em;
-    border: 1px solid #5f8c96;  
+    border: 1px solid #E3E7D3;  
     text-align: center;
     margin: 1em;
     margin-bottom: 0;
+    border-radius: 4px;
 }
 
 .picker {
     flex-basis: 50%;
     background: inherit;
-    color: #325656;
+    color: #E3E7D3;
     font: inherit;
     border: none;
 }
 
 .picked {
-    background-color: #83b7c7;
+    background-color: #9bd4ff;
+    color: #0c1618;
 }
 
 .picker:hover {
@@ -78,6 +80,7 @@
     flex-flow: column wrap;
     justify-content: center;
     align-items: center; 
+    color: #E3E7D3;
 }
 
 input {
@@ -88,6 +91,7 @@ input {
     background-color: inherit;
     color: inherit;
     border: 1px solid #9bd4ff;
+    border-radius: 4px;
 }
 
 
@@ -121,12 +125,13 @@ input[type="submit"] {
 width:100%;
 position: relative;
 z-index: 1;
+
 display: inline-block;
 padding: 16px 20px;
 margin:8px 0;
-font-size: 28px;
+font-size: 20px;
 font-family:'poppins',sans-serif;
-background-color:#c6ffc6;
+background-color:#9bd4ff;
 background-size: 100%;
 background-image: -webkit-linear-gradient(45deg,
                                           rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%,
@@ -140,9 +145,9 @@ background-image:          linear-gradient(45deg,
                                           rgba(0, 0, 0, 0));
 background-size: 20px 20px, 100% 100%;
 border: 1px solid ;
-border-color:  #c6ffc6;
+border-color:  #9bd4ff;
 border-bottom-width : 3px;
-color:#001220;
+color:#0c1618;
 outline: none;
 cursor: pointer;
 -webkit-transition: all 0.3s ease;
@@ -150,7 +155,7 @@ transition: all 0.3s ease;
 border-radius:4px;
 }
 input[type="submit"]:hover {
-background-size: 40px 40px;
+background-size: 30px 30px;
 }
 
     </style>
@@ -203,6 +208,7 @@ background-size: 40px 40px;
         
         <div class="input-field" id="sign-input">
             <h2 class="message">Sign-up for free!</h2>
+            <p>Your school needs to signed in with us</p>
             <div class="small">
                 <input class="small-input" type="text" placeholder="First Name">
                 <input class="small-input" type="text" placeholder="Last Name">
@@ -214,10 +220,11 @@ background-size: 40px 40px;
             
         <div class="input-field inactive" id="log-input">    
             <h2 class="message"> Welcome Back !</h2>
+            <p>Your school needs to signed in with us</p>
             <input type="email" placeholder="E-mail"    autocomplete="on">
             <input type="password" placeholder="password" required> 
             <a class="a">Forgot password?</a>
-             <input class="submit-button" type="submit" value="Log-in">
+             <input class="submit-button" type="submit" value="Log-in" >
         </div>
     </div>
 </section>
