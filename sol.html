@@ -85,6 +85,7 @@
      
    </div>
 </section>
+<section id="sol">
 <div class="tabs">
   
   <input type="radio" id="tab1" name="tab-control" checked>
@@ -106,18 +107,68 @@
   <div class="slider"><div class="indicator"></div></div>
   <div class="content">
     <section>
-      <h2>Features</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea dolorem sequi, quo tempore in eum obcaecati atque quibusdam officiis est dolorum minima deleniti ratione molestias numquam. Voluptas voluptates quibusdam cum?</section>
+      <h2>Academics</h2>The iCard will store transcripts of all classes attended by the student since enrollment, making access convenient for both teachers and students, thanks to the unique admission number assigned to each iCard.<br>
+
+      Certifications and awards will also be stored on the iCard for easy future reference.
+      <br>
+      Accessing previous years' transcripts, especially for awarding the Scholar Badge (given to students who score 80% and above), will be streamlined, speeding up the badge distribution process.
+      <br>
+      The Admin office will have authorized access to the student database, allowing them to retrieve any necessary data quickly and efficiently.
+      <br>
+      By simply tapping the iCard on an RFID reader, the system will instantly identify the student and retrieve all relevant information.</section>
         <section>
-          <h2>Delivery Contents</h2>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quas adipisci a accusantium eius ut voluptatibus ad impedit nulla, ipsa qui. Quasi temporibus eos commodi aliquid impedit amet, similique nulla.</section>
-        <section>
-          <h2>Shipping</h2>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nemo ducimus eius, magnam error quisquam sunt voluptate labore, excepturi numquam! Alias libero optio sed harum debitis! Veniam, quia in eum.</section>
-    <section>
-          <h2>Returns</h2>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta vero rerum? Eaque repudiandae architecto libero reprehenderit aliquam magnam ratione quidem? Nobis doloribus molestiae enim deserunt necessitatibus eaque quidem incidunt.</section>
+          <h2>Issuing books</h2>
+          Currently, book issuance is handled manually by the librarian. We aim to digitize this process by linking each book to the student's unique admission number stored on their iCard.
+<br>
+          This will provide a comprehensive history of all books borrowed or lost by the student, accessible with just the admission number in the library database.
+          <br>
+          The digital library database will streamline book management, making it easier for the library to maintain records and oversee the entire collection.    </section>
+          <section>
+          <h2>Medical Data</h2>
+          When a student enters the medical room, the nurse can quickly access the student's medical history by using an RFID reader linked to the student's unique admission number.
+<br>
+The RFID reader will identify the iCard and display the student's complete medical history, including details like height, weight, allergies, blood pressure issues, and more.
+<br>
+Nurses can also log each visit to the medical room, noting the reason for the visit, which helps in tracking ongoing health concerns.
+<br>
+In case of an emergency, this system allows instant access to vital medical information with just a tap, ensuring prompt and accurate care.    </section>
+  <section>       
+  <h2>School shops</h2>
+          Some money can be stored on the iCard for later use. This digital wallet allows parents to transfer funds to the card for students to spend on uniforms, books, and canteen items.
+<br>
+Parents can choose to add money monthly or every three months, depending on their ward's needs.
+<br>
+Shop owners can use an RFID reader to access the iCard’s details and check the available balance. They can then deduct the required amount for purchases such as books, uniforms, food, and other essentials directly from the card.</section>
   </div>
 </div>
+</section>
+<footer class="footer">
+  <div class="footer-content">
+    <p class="footerText">&copy; Team DigiCard 2024</p>
+  </div>
+</footer>
+<button onclick="topFunction()" id="top" title="Go to top" style="background-color: #9bd4ff;"><i class="fa-solid fa-chevron-up"></i></button>
+<script>
+  feather.replace();
+</script>
+<script>
+  mybutton = document.getElementById("top");
 
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}
+</script>
 </body>
 </html>
