@@ -301,7 +301,7 @@
           left: 50%;
           transform: translateX(-50%);
           position: relative;
-          
+          margin-top: 150px;
           padding: 50px;
           padding-bottom: 80px;
           width: 70%;
